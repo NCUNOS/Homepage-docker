@@ -11,7 +11,7 @@ RUN apt-get -y install git
 RUN git clone https://github.com/NCUNOS/Homepage.git
 
 # Copy into nginx www directory
-COPY Homepage /usr/share/nginx/html
+RUN cp -r Homepage /usr/share/nginx/html
 
 # Expose 80 port
 EXPOSE 80
