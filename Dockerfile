@@ -3,6 +3,8 @@ FROM nginx:1.9
 MAINTAINER Davy <me@davy.tw>
 
 # Basic Requirements
+RUN apt-get update
+RUN apt-get -y upgrade
 RUN apt-get -y install git
 
 # Clone the newest application
