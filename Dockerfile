@@ -2,6 +2,9 @@ FROM nginx:1.9
 
 MAINTAINER Davy <me@davy.tw>
 
+# Basic Requirements
+RUN apt-get -y install git
+
 # Clone the newest application
 RUN git clone https://github.com/NCUNOS/Homepage.git
 
