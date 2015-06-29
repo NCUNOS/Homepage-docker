@@ -10,7 +10,7 @@ Usage
 To run it:
 
 ```
-$ docker run -d -p 80:80 ncunos/Homepage
+$ docker run -d -p 80:80 ncunos/homepage
 ```
 
 Usage-Compose
@@ -19,7 +19,7 @@ Usage-Compose
 docker-compose.yml:
 
 ```
-luffa:
+homepage:
   image: ncunos/homepage
 ```
 
